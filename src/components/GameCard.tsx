@@ -27,7 +27,7 @@ const GameCard = ({ game }: Props) => {
           />
           <CriticScore score={game.metacritic} />
         </HStack>
-        <Box height="85px">
+        <Box height="60px">
           <Heading fontSize="2xl">{game.name}</Heading>
         </Box>
       </CardBody>
