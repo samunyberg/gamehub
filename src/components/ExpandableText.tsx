@@ -17,18 +17,16 @@ const ExpandableText = ({ maxChars, children }: Props) => {
 
   return (
     <>
-      <Text>
-        {summary}
-        <Button
-          colorScheme="yellow"
-          fontWeight="bold"
-          marginX={3}
-          size="xs"
-          onClick={() => setExpanded(!expanded)}
-        >
-          {expanded ? "Show Less" : "Read More"}
-        </Button>
-      </Text>
+      <Text>{summary}</Text>
+      <Button
+        colorScheme="yellow"
+        fontWeight="bold"
+        marginY={3}
+        size="xs"
+        onClick={() => setExpanded(!expanded)}
+      >
+        {expanded ? "Show Less" : "Read More"}
+      </Button>
     </>
   );
 };
